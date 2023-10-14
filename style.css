@@ -1,0 +1,32 @@
+body {
+    height: 100vh;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.dooz {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+}
+.dooz button {
+    height: 150px;
+    font-size: xx-large;
+    background-color: white;
+    border: none;
+}
+.dooz button:hover {
+    background-color: rgb(214, 214, 214);
+}
+.b,
+.e,
+.h {
+    border-left: 1px solid black !important;
+    border-right: 1px solid black !important;
+}
+.d,.e,.f{
+    border-bottom: 1px solid black !important;
+    border-top: 1px solid black !important;
+}
