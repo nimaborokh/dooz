@@ -35,13 +35,17 @@ function patternn() {
         if (element1 != "" && element2 != "" && element3 != "") {
             if (element1 == element2 && element2 == element3) {
                 return (
-                    (dooze.style.display = "none"),
+                    ((dooze.style.display = "none"),
                     (p.innerHTML = element1 + "       is  win"),
-                    (document.getElementById("refresh").style.display = "")
+                    (document.getElementById("refresh").style.display = "")),
+                    (document.getElementById("again").style.display = "none")
                 );
             }
         }
     }
+}
+function again() {
+    console.log(btnRef.forEach((element) => (element.innerText = "")));
 }
 function relode() {
     location.reload();

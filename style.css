@@ -1,8 +1,10 @@
 body {
     height: 100vh;
     font-size: xx-large;
+    background: linear-gradient(to right, #dc2424, #4a569d);
 }
 .container {
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,18 +12,19 @@ body {
     flex-direction: column;
 }
 .dooz {
-    
     display: grid;
     grid-template-columns: repeat(3, 150px);
+    gap: 10px;
 }
 .dooz button {
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
     height: 150px;
     font-size: 160px;
     background-color: white;
     border: none;
+    border-radius: 5px;
 }
 .dooz button:hover {
     background-color: rgb(214, 214, 214);
@@ -37,4 +40,30 @@ body {
 .f {
     border-bottom: 1px solid black !important;
     border-top: 1px solid black !important;
+}
+.cdooz {
+    display: flex;
+    flex-direction: row;
+}
+.agine {
+    position: absolute;
+    right: 20%;
+    top: 44%;
+}
+.agine button {
+    width: 190px;
+    height: 190px;
+    border-radius: 500px;
+    background-color: blueviolet;
+    color: white;
+    font-size: x-large;
+    border: none;
+}
+.agine button:hover{
+    background-color: rgb(159, 83, 230);
+}
+#refresh{
+    padding: 20px;
+    border-radius: 100px;
+    bo
 }
