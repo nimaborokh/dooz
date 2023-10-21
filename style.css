@@ -4,7 +4,7 @@ body {
     background: linear-gradient(to right, #dc2424, #4a569d);
 }
 .container {
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,13 +42,20 @@ body {
     border-top: 1px solid black !important;
 }
 .cdooz {
+    width: 100%;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
-.agine {
-    position: absolute;
-    right: 20%;
-    top: 44%;
+.befor p {
+    /** TEXT GRADIENT */
+    color: #ffffff;
+    background-image: -webkit-linear-gradient(0deg, #ffffff 9%, #db00cd 75%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 .agine button {
     width: 190px;
@@ -59,11 +66,19 @@ body {
     font-size: x-large;
     border: none;
 }
-.agine button:hover{
+.agine button:hover {
     background-color: rgb(159, 83, 230);
 }
-#refresh{
+#refresh {
     padding: 20px;
     border-radius: 100px;
-    bo
+}
+@media screen and (max-width: 980px) {
+    .cdooz {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .dooz {
+        grid-template-columns: repeat(3, 140px);
+    }
 }
