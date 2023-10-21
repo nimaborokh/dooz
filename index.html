@@ -8,18 +8,19 @@
     </head>
     <body>
         <div class="container">
-            <p id="demo">knlj</p>
-            <div class="dooz">
-                <button class="a" id="a" onclick="dooz(this.id)"></button>
-                <button class="b" id="b" onclick="dooz(this.id)"></button>
-                <button class="c" id="c" onclick="dooz(this.id)"></button>
-                <button class="d" id="d" onclick="dooz(this.id)"></button>
-                <button class="e" id="e" onclick="dooz(this.id)"></button>
-                <button class="f" id="f" onclick="dooz(this.id)"></button>
-                <button class="g" id="g" onclick="dooz(this.id)"></button>
-                <button class="h" id="h" onclick="dooz(this.id)"></button>
-                <button class="i" id="i" onclick="dooz(this.id)"></button>
+            <p id="demo"></p>
+            <div class="dooz" id="dooz">
+                <button class="a btn" id="a" onclick="dooz(this.id),patternn()"></button>
+                <button class="b btn" id="b" onclick="dooz(this.id),patternn()"></button>
+                <button class="c btn" id="c" onclick="dooz(this.id),patternn()"></button>
+                <button class="d btn" id="d" onclick="dooz(this.id),patternn()"></button>
+                <button class="e btn" id="e" onclick="dooz(this.id),patternn()"></button>
+                <button class="f btn" id="f" onclick="dooz(this.id),patternn()"></button>
+                <button class="g btn" id="g" onclick="dooz(this.id),patternn()"></button>
+                <button class="h btn" id="h" onclick="dooz(this.id),patternn()"></button>
+                <button class="i btn" id="i" onclick="dooz(this.id),patternn()"></button>
             </div>
+            <button id="refresh" onclick="relode()" style="display: none;">refresh</button>
         </div>
         <script src="mine.js"></script>
     </body>

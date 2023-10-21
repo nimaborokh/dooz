@@ -1,5 +1,6 @@
 body {
     height: 100vh;
+    font-size: xx-large;
 }
 .container {
     display: flex;
@@ -9,12 +10,16 @@ body {
     flex-direction: column;
 }
 .dooz {
+    
     display: grid;
     grid-template-columns: repeat(3, 150px);
 }
 .dooz button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 150px;
-    font-size: xx-large;
+    font-size: 160px;
     background-color: white;
     border: none;
 }
@@ -27,7 +32,9 @@ body {
     border-left: 1px solid black !important;
     border-right: 1px solid black !important;
 }
-.d,.e,.f{
+.d,
+.e,
+.f {
     border-bottom: 1px solid black !important;
     border-top: 1px solid black !important;
 }
