@@ -51,7 +51,7 @@ body {
 .befor p {
     /** TEXT GRADIENT */
     color: #ffffff;
-    background-image: -webkit-linear-gradient(0deg, #ffffff 9%, #db00cd 75%);
+    background-image: -webkit-linear-gradient(0deg, #fcc245 9%, #fa7ef2 75%);
     background-clip: text;
     -webkit-background-clip: text;
     text-fill-color: transparent;

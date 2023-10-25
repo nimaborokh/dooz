@@ -50,7 +50,13 @@ function again() {
     console.log(btnRef.forEach((element) => (element.innerText = "")));
 }
 function relode() {
-    location.reload();
+    return (
+        (dooze.style.display = ""),
+        (p.innerHTML = ""),
+        (document.getElementById("refresh").style.display = "none"),
+        (document.getElementById("again").style.display = ""),
+        btnRef.forEach((element) => (element.innerText = ""))
+    );
 }
 function eqale() {
     if (arr.length == 9 && booly == false) {
