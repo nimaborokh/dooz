@@ -1,6 +1,7 @@
 body {
     height: 100vh;
-    font-size: xx-large;
+    margin: 0;
+    font-size: 5vmin;
     background: linear-gradient(to right, #dc2424, #4a569d);
 }
 .container {
@@ -13,15 +14,16 @@ body {
 }
 .dooz {
     display: grid;
-    grid-template-columns: repeat(3, 150px);
+    grid-template-columns: repeat(3, 20vmin);
     gap: 10px;
 }
 .dooz button {
     display: flex;
     align-items: end;
     justify-content: center;
-    height: 150px;
-    font-size: 160px;
+    height: 20vmin;
+    width: 20vmin;
+    font-size: 20vmin;
     background-color: white;
     border: none;
     border-radius: 5px;
@@ -54,17 +56,16 @@ body {
     background-image: -webkit-linear-gradient(0deg, #fcc245 9%, #fa7ef2 75%);
     background-clip: text;
     -webkit-background-clip: text;
-    text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
 }
 .agine button {
-    width: 190px;
-    height: 190px;
-    border-radius: 500px;
-    background-color: blueviolet;
+    width: 30vmin;
+    height: 10vmin;
+    background-image: -webkit-linear-gradient(0deg, #fcc245 9%, #fa7ef2 75%);
     color: white;
-    font-size: x-large;
+    font-size: 5vmin;
     border: none;
+    border-radius: 10px;
 }
 .agine button:hover {
     background-color: rgb(159, 83, 230);
@@ -73,12 +74,38 @@ body {
     padding: 20px;
     border-radius: 100px;
 }
+.befor p {
+    margin: 10px 0px;
+}
 @media screen and (max-width: 980px) {
     .cdooz {
         flex-direction: column;
         gap: 10px;
     }
     .dooz {
-        grid-template-columns: repeat(3, 140px);
+        grid-template-columns: repeat(3, 23vmin);
+        gap: 5px;
+    }
+    .dooz button {
+        width: 23vmin;
+        height: 23vmin;
+    }
+}
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    .container {
+        justify-content: start;
+    }
+    .dooz button {
+        width: 23vmin;
+        height: 23vmin;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    .dooz button {
+        width: 25vmin;
+        height: 25vmin;
+    }
+    .dooz {
+        grid-template-columns: repeat(3, 25vmin);
     }
 }

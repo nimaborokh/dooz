@@ -3,6 +3,7 @@ let btnRef = document.querySelectorAll(".btn");
 let dooze = document.getElementById("dooz");
 let arr = [];
 let booly = false;
+p.style.display = "none";
 let winningPattern = [
     [0, 1, 2],
     [0, 3, 6],
@@ -40,14 +41,18 @@ function patternn() {
                     (p.innerHTML = element1 + "       is  win"),
                     (document.getElementById("refresh").style.display = "")),
                     (document.getElementById("again").style.display = "none"),
-                    (booly = true)
+                    (booly = true),
+                    (p.style.display = "")
                 );
             }
         }
     }
 }
 function again() {
-    console.log(btnRef.forEach((element) => (element.innerText = "")));
+    return btnRef.forEach(
+        (element) => (element.innerText = ""),
+        (arr.length = 0)
+    );
 }
 function relode() {
     return (
@@ -55,16 +60,20 @@ function relode() {
         (p.innerHTML = ""),
         (document.getElementById("refresh").style.display = "none"),
         (document.getElementById("again").style.display = ""),
+        (p.style.display = "none"),
         btnRef.forEach((element) => (element.innerText = ""))
     );
 }
 function eqale() {
     if (arr.length == 9 && booly == false) {
         return (
-            ((dooze.style.display = "none"),
+            (((dooze.style.display = "none"),
             (p.innerHTML = "You are tied!"),
             (document.getElementById("refresh").style.display = "")),
-            (document.getElementById("again").style.display = "none")
+            (document.getElementById("again").style.display = "none")),
+            (p.style.display = "")
         );
     }
 }
+btnRef.forEach((element) => element.addEventListener("click", eqale));
+btnRef.forEach((element) => element.addEventListener("click", patternn));
