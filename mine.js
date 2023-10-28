@@ -42,7 +42,8 @@ function patternn() {
                     (document.getElementById("refresh").style.display = "")),
                     (document.getElementById("again").style.display = "none"),
                     (booly = true),
-                    (p.style.display = "")
+                    (p.style.display = ""),
+                    (arr.length = 0)
                 );
             }
         }
@@ -71,7 +72,8 @@ function eqale() {
             (p.innerHTML = "You are tied!"),
             (document.getElementById("refresh").style.display = "")),
             (document.getElementById("again").style.display = "none")),
-            (p.style.display = "")
+            (p.style.display = ""),
+            (arr.length = 0)
         );
     }
 }
