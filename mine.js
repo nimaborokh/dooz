@@ -2,7 +2,7 @@ let p = document.getElementById("demo");
 let btnRef = document.querySelectorAll(".btn");
 let dooze = document.getElementById("dooz");
 let arr = [];
-let foreqaul = false;
+let booly = false;
 btnRef.forEach((element) => element.addEventListener("click", eqale));
 btnRef.forEach((element) => element.addEventListener("click", patternn));
 p.style.display = "none";
@@ -43,7 +43,7 @@ function patternn() {
                     (p.innerHTML = element1 + "       is  win"),
                     (document.getElementById("refresh").style.display = "")),
                     (document.getElementById("again").style.display = "none"),
-                    (foreqaul = true),
+                    (booly = true),
                     (p.style.display = ""),
                     (arr.length = 0)
                 );
@@ -68,7 +68,7 @@ function relode() {
     );
 }
 function eqale() {
-    if (arr.length == 9 && foreqaul == false) {
+    if (arr.length == 9 && booly == false) {
         return (
             (((dooze.style.display = "none"),
             (p.innerHTML = "You are tied!"),

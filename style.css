@@ -12,7 +12,23 @@ body {
     height: 100vh;
     flex-direction: column;
 }
-.dooz {
+.container .cdooz {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container .cdooz .beforbuuton p {
+    /** TEXT GRADIENT */
+    color: #ffffff;
+    background-image: -webkit-linear-gradient(0deg, #fcc245 9%, #fa7ef2 75%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 10px 0px;
+}
+.container .cdooz .dooz {
     display: grid;
     grid-template-columns: repeat(3, 20vmin);
     gap: 10px;
@@ -43,21 +59,6 @@ body {
     border-bottom: 1px solid black !important;
     border-top: 1px solid black !important;
 }
-.cdooz {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.befor p {
-    /** TEXT GRADIENT */
-    color: #ffffff;
-    background-image: -webkit-linear-gradient(0deg, #fcc245 9%, #fa7ef2 75%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 .clear button {
     width: 30vmin;
     height: 10vmin;
@@ -82,15 +83,11 @@ body {
     margin-top: 30px;
     opacity: 0.8;
     transition: opacity 0.1s linear;
-
 }
-.again:hover{
+.again:hover {
     opacity: 1;
 }
-.befor p {
-    margin: 10px 0px;
-}
-#demo{
+#demo {
     color: white;
 }
 @media screen and (max-width: 980px) {
